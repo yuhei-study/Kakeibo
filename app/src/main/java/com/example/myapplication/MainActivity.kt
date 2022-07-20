@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             // monthは0起算のため+1します。
             //val displayMonth = month + 1
             //Toast.makeText(applicationContext, "$year/$displayMonth/$dayOfMonth", Toast.LENGTH_SHORT).show()
-            val intent = Intent(application, detail_Activity::class.java)
+            val intent = Intent(application, detail_activity::class.java)
             startActivity(intent)
         }
     }
