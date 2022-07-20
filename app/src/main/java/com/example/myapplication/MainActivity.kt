@@ -21,9 +21,6 @@ class MainActivity : AppCompatActivity() {
 
     private inner class DateChangeListener : CalendarView.OnDateChangeListener {
         override fun onSelectedDayChange(calendarView: CalendarView, year: Int, month: Int, dayOfMonth: Int) {
-            // monthは0起算のため+1します。
-            //val displayMonth = month + 1
-            //Toast.makeText(applicationContext, "$year/$displayMonth/$dayOfMonth", Toast.LENGTH_SHORT).show()
             val intent = Intent(application, detail_activity::class.java)
             startActivity(intent)
         }
